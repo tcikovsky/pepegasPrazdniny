@@ -89,8 +89,8 @@ export default function App() {
       const dateDiv = document.querySelector("#dateDiv");
 
       line.style.position = "absolute";
-      const left = 14.82004234297812;
-      const right = 94.00141143260409;
+      const left = 9.946075494307969;
+      const right = 89.33493109646495;
       const leftBorder = (window.innerWidth / 100) * left;
       const rightBorder = (window.innerWidth / 100) * right;
 
@@ -104,6 +104,9 @@ export default function App() {
         line.style.left = e.clientX + "px";
         dateDiv.style.left = e.clientX + "px";
       }
+
+      console.log(e.clientX);
+      console.log(window.innerWidth);
 
       dateDiv.style.top = e.clientY - 40 + "px";
 
